@@ -34,6 +34,7 @@ public class AuthUserService {
 	 public User signup(UserDto input) {
 	        User user = new User();
 	        user.setName(input.getName());
+	        user.setRole(input.getRole());
 	        user.setEmail(input.getEmail());
 	        user.setPassword(passwordEncoder.encode(input.getPassword()));
 
